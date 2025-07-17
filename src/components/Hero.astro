@@ -6,35 +6,44 @@ import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
 ---
 
-<div class="max-w-xl">
+<div class="max-w-4xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="rounded-full shadow-lg size-16"
+      class="rounded-full shadow-lg size-28"
       src="/me.jpg"
       alt={personalImageAlt}
     />
-    <a
-      href="https://linkedin.com/in/jperezr89"
-      target="_blank"
-      rel="noopener"
-      class="flex items-center transition md:justify-center md:hover:scale-105"
-    >
-      <Badge>Disponible para trabajar</Badge>
-    </a>
+    <div class="flex flex-col justify-center gap-2 mb-4">
+      <h1
+        class="flex text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+      >
+        Hola! soy Jairo
+      </h1>
+      <!-- <a
+        href="https://linkedin.com/in/jperezr89"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+      >
+        <Badge>Disponible para trabajar</Badge>
+      </a> -->
+    </div>
   </div>
-  <h1
-    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+
+  <h2
+    class="mt-6 text-4xl font-bold tracking-tight text-gray-800 sm:text-3xl dark:text-white"
   >
-    Hey! soy Jairo
-  </h1>
+    Ingeniero de Software, Desarrollador y Programador Web
+  </h2>
   <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+    class="mt-5 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300 text-pretty"
   >
-    <strong>Ingeniero de Software, Desarrollador y Programador Web</strong> de Puntarenas,
-    Costa Rica 🇪🇸. Con experiencia sólida en PHP y arquitecto de soluciones empresariales
-    especializado en PEGA Systems (plataforma low-code). Profesional multidisciplinario
-    con más de 4 años desarrollando e implementando aplicaciones web robustas y escalables,
-    así como en la definición de arquitecturas empresariales.
+    Trabajo creando sofware que soluciona problemas de forma sencilla. Con
+    experiencia sólida en PHP y arquitecto de soluciones empresariales
+    especializado en PEGA Systems (plataforma low-code). Profesional
+    multidisciplinario con más de 4 años desarrollando e implementando
+    aplicaciones web robustas y escalables, así como en la definición de
+    arquitecturas empresariales.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:jrwc1989@gmail.com">
