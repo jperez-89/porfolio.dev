@@ -4,22 +4,23 @@ import Badge from "@/components/Badge.astro";
 import LinkedInIcon from "@/components/icons/LinkedIn.astro";
 import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
+import WhatsApp from "./icons/WhatsApp.astro";
 ---
 
 <div class="max-w-4xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="rounded-full shadow-lg size-28"
+      class="rounded-full shadow-lg lg:size-28 md:size-20 sm:size-14 object-cover"
       src="/me.jpg"
       alt={personalImageAlt}
     />
-    <div class="flex flex-col justify-center gap-2 mb-4">
-      <h1
-        class="flex lg:text-5xl md:text-4xl text-4xl font-bold tracking-tight text-gray-800 dark:text-white"
-      >
-        Hola! soy Jairo
-      </h1>
-      <!-- <a
+    <!-- <div class="flex gap-2"> -->
+    <h1
+      class="flex lg:text-4xl lg:mt-16 md:text-3xl md:mt-10 sm:text-2xl sm:mt-6 font-bold tracking-tight text-gray-800 dark:text-white"
+    >
+      Hola! soy Jairo
+    </h1>
+    <!-- <a
         href="https://linkedin.com/in/jperezr89"
         target="_blank"
         rel="noopener"
@@ -27,16 +28,16 @@ import SocialPill from "@/components/SocialPill.astro";
       >
         <Badge>Disponible para trabajar</Badge>
       </a> -->
-    </div>
+    <!-- </div> -->
   </div>
 
   <h2
-    class="mt-6 font-bold tracking-tight text-gray-800 lg:text-4xl md:text-3xl text-3xl dark:text-yellow-400"
+    class="mt-6 font-bold tracking-tight text-gray-800 lg:text-3xl md:text-2xl sm:text-xl dark:text-yellow-400"
   >
     Ingeniero de Software, Desarrollador y Programador Web
   </h2>
   <p
-    class="mt-5 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300 text-pretty"
+    class="mt-5 lg:text-2xl md:text-xl sm:text-sm text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300 text-justify"
   >
     Trabajo creando sofware que soluciona problemas de forma sencilla. Con
     experiencia sólida en PHP y arquitecto de soluciones empresariales
@@ -45,7 +46,7 @@ import SocialPill from "@/components/SocialPill.astro";
     aplicaciones web robustas y escalables, así como en la definición de
     arquitecturas empresariales.
   </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
+  <nav class="flex flex-wrap gap-4 mt-6 lg:text-xl md:text-sm sm:text-xs">
     <SocialPill href="mailto:jrwc1989@gmail.com">
       <MailIcon class="size-4" />
       Contáctame
@@ -53,6 +54,12 @@ import SocialPill from "@/components/SocialPill.astro";
     <SocialPill href="https://linkedin.com/in/jperezr89">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill
+      href="https://wa.me/50683182537?text=Hola%20Jairo!%20Quiero%20contactarte%20desde%20tu%20portafolio"
+    >
+      <WhatsApp class="size-4" />
+      WhatsApp
     </SocialPill>
   </nav>
 </div>
